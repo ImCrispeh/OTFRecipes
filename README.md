@@ -1,5 +1,5 @@
 # OTFRecipes
-Recipe search Android (Java) application made as a university project
+Recipe search Android (Java) application created for a university project
 
 FEATURES:
 -	Users can search through and select ingredients and recipes will be shown to them based on those ingredients
