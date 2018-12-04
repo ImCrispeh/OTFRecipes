@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">OTF Recipes</string>
+    <string name="main_heading">Search Recipes</string>
+    <string name="main_ingredients_heading">Ingredients to include:</string>
+    <string name="main_btn_add">Add</string>
+    <string name="main_btn_clear">Clear</string>
+    <string name="main_btn_settings">Settings</string>
+    <string name="main_btn_search">Search</string>
+
+    <string name="add_ingredients_heading">Add Ingredients</string>
+    <string name="add_ingredients_hint_search">Search for ingredient...</string>
+    <string name="add_ingredients_btn_search">Search</string>
+    <string name="add_ingredients_no_results">No results found</string>
+    <string name="add_ingredients_btn_clear">Clear</string>
+    <string name="add_ingredient_btn_save">Save</string>
+
+    <string name="settings_heading">Settings</string>
+    <string name="settings_speech_heading">Voice Commands</string>
+    <string name="settings_speech_on">On</string>
+    <string name="settings_speech_off">Off</string>
+    <string name="settings_diet_heading">Diet Selection</string>
+    <string name="settings_restrict_ingredients_heading">Ingredients restriction mode</string>
+    <string name="settings_complete_restrict_ingredients">Only chosen/common household ingredients</string>
+    <string name="settings_allow_other_ingredients">Allow extra ingredients</string>
+    <string name="settings_allow_other_ingredients_hint">No. of ingredients</string>
+    <string name="settings_restrict_fat_heading">Fat restriction mode</string>
+    <string name="settings_restrict_fat">Restrict fat</string>
+    <string name="settings_restrict_fat_hint">Amount of fat</string>
+    <string name="settings_restrict_sugar_heading">Sugar restriction mode</string>
+    <string name="settings_restrict_sugar">Restrict sugar</string>
+    <string name="settings_restrict_sugar_hint">Amount of sugar</string>
+    <string name="settings_restrict_calories_heading">Calories restriction mode</string>
+    <string name="settings_restrict_calories">Restrict calories</string>
+    <string name="settings_restrict_calories_hint">No. of calories</string>
+    <string name="settings_no_restriction">No restriction</string>
+    <string name="settings_reset">Reset</string>
+    <string name="settings_save">Save</string>
+    <string name="settings_speech_toast_hint">Try saving \"hint\" to display a possible voice command</string>
+
+    <string name="recipe_list_heading">Recipes Found</string>
+    <string name="recipe_list_no_results">No results found</string>
+    <string name="recipe_list_error">Error loading recipes</string>
+
+    <string name="recipe_image_error">Error loading image</string>
+    <string name="recipe_error">Error loading recipe</string>
+    <string name="recipe_btn_open_web">Open recipe web page</string>
+    <string name="recipe_nutrients_heading">Nutritional Information</string>
+    <string name="recipe_ingredients_heading">Ingredients</string>
+    <string name="recipe_method_heading">Method</string>
+
+    <string name="ingredients_saved_toast">Ingredients saved</string>
+    <string name="ingredients_cleared_toast">Ingredients cleared</string>
+    <string name="settings_saved_toast">Settings saved</string>
+    <string name="settings_reset_toast">Settings reset</string>
+</resources>

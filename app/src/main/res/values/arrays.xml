@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018 Christopher Fung.
+  ~ All rights reserved.
+  -->
+
+<resources>
+    <string-array name="diet_array">
+        <item>None</item>
+        <item>Vegetarian</item>
+        <item>Vegan</item>
+        <item>Pescetarian</item>
+        <item>Paleo</item>
+    </string-array>
+
+    <string-array name="add_ingredients_voice_hints">
+        <item>Try saying \"search for\" and then an ingredient name</item>
+        <item>After searching for an ingredient try saying \"add\" and then the name of a displayed ingredient</item>
+        <item>Try saying \"save\" to return to the home screen and add your ingredients to there</item>
+        <item>Try saying \"clear ingredients\" to clear the ingredients list</item>
+        <item>Try saying \"delete\" and then an ingredient name to remove it from your list</item>
+        <item>Try saying \"back\" to return to the home screen</item>
+    </string-array>
+
+    <string-array name="main_voice_hints">
+        <item>Try saying \"add ingredient\"</item>
+        <item>Try saying \"search\" to initiate a recipe search</item>
+        <item>Try saying \"clear ingredients\" to clear the ingredients list</item>
+        <item>Try saying \"delete\" and then an ingredient name to remove it from your list</item>
+        <item>Try saying \"go to settings\"</item>
+    </string-array>
+
+    <string-array name="recipe_voice_hints">
+        <item>Try saying \"read next\" and then \"nutrient\", \"ingredient\" or \"instruction\"</item>
+        <item>Try saying \"view web page\"</item>
+        <item>Try saying \"back\" to return to the recipe search results screen</item>
+    </string-array>
+
+    <string-array name="recipe_list_voice_hints">
+        <item>Try saying \"view\" and then a recipe name</item>
+        <item>Try saying \"back\" to return to the home screen</item>
+    </string-array>
+
+    <string-array name="recipe_web_voice_hints">
+        <item>Try saying \"back\" to return to the recipe screen</item>
+    </string-array>
+
+    <string-array name="settings_voice_hints">
+        <item>Try saying \"diet vegan\"</item>
+        <item>Try saying \"restrict to chosen ingredients\"</item>
+        <item>Try saying \"restrict calories 750\"</item>
+        <item>Try saying \"save\" to save your settings and return to the home screen</item>
+        <item>Try saying \"back\" to return to the home screen</item>
+    </string-array>
+</resources>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2018 Christopher Fung.
+  ~ All rights reserved.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SettingsActivity">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/text_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/settings_heading"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TableLayout
+            android:id="@+id/table_layout_settings_restrictions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/text_heading"
+            android:orientation="vertical">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_speech_heading"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="20dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group_speech"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_speech_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_speech_on"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_speech_off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_speech_off"
+                        android:textSize="12sp" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_diet_heading"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="20dp">
+
+                <Spinner
+                    android:id="@+id/diet_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/diet_array" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_restrict_ingredients_heading"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="20dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group_ingredient_restriction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_complete_restrict_ingredients"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_complete_restrict_ingredients"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_allow_other_ingredients"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_allow_other_ingredients"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_no_restriction_ingredients"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_no_restriction"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/edit_text_ingredients_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:hint="@string/settings_allow_other_ingredients_hint"
+                    android:inputType="number"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_restrict_calories_heading"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="20dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group_calorie_restriction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_restrict_calories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_restrict_calories"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_no_restriction_calories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_no_restriction"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/edit_text_calories_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_restrict_calories_hint"
+                    android:inputType="number"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_restrict_fat_heading"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="20dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group_fat_restriction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_restrict_fat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_restrict_fat"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_no_restriction_fat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_no_restriction"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/edit_text_fat_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_restrict_fat_hint"
+                    android:inputType="number"
+                    android:textSize="12sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_restrict_sugar_heading"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="20dp">
+
+                <RadioGroup
+                    android:id="@+id/radio_group_sugar_restriction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_restrict_sugar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_restrict_sugar"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_no_restriction_sugar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_no_restriction"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/edit_text_sugar_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_restrict_sugar_hint"
+                    android:inputType="number"
+                    android:textSize="12sp" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_reset_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/table_layout_settings_restrictions">
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_reset"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:layout_marginRight="2dp"/>
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_save"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    </HorizontalScrollView>
+
+</ScrollView>
