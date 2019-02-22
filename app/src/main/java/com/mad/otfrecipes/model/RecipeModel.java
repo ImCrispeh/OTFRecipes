@@ -8,6 +8,8 @@ package com.mad.otfrecipes.model;
 import android.net.Uri;
 import android.util.Log;
 
+import com.mad.otfrecipes.BuildConfig;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -26,7 +28,7 @@ public class RecipeModel {
     private final String INFORMATION_PATH = "information";
     private final String INSTRUCTIONS_PATH = "analyzedInstructions";
     private final String KEY_HEADER = "X-Mashape-Key";
-    private final String KEY = "Wvy0xo6LMLmshG6ak4YecvHKzuhap1WlveFjsn5I0kVosY52BB";
+    private final String KEY = BuildConfig.SPOONACULAR_API_KEY;
     private final String HOST_HEADER = "X-Mashape-Host";
     private final String HOST = "spoonacular-recipe-food-nutrition-v1.p.mashape.com";
     private final String INCLUDE_NUTRITION_PARAM = "includeNutrition";

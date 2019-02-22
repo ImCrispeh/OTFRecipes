@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.util.Log;
 
+import com.mad.otfrecipes.BuildConfig;
 import com.mad.otfrecipes.constants.PreferencesConstants;
 
 import org.json.JSONArray;
@@ -39,7 +40,7 @@ public class RecipeListModel {
     private final String TRUE = "true";
     private final String NUMBER_OF_RESULTS = "5";
     private final String KEY_HEADER = "X-Mashape-Key";
-    private final String KEY = "Wvy0xo6LMLmshG6ak4YecvHKzuhap1WlveFjsn5I0kVosY52BB";
+    private final String KEY = BuildConfig.SPOONACULAR_API_KEY;
     private final String HOST_HEADER = "X-Mashape-Host";
     private final String HOST = "spoonacular-recipe-food-nutrition-v1.p.mashape.com";
     private final String RESULTS_ARRAY = "results";
